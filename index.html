@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+    let count=0
+    var content=document.getElementsByClassName("container")
+    var color=document.getElementsByTagName("span")
+    var text=document.getElementsByTagName("h1")
+    var bttn=document.getElementsByTagName("button")
+    function update(){
+        let arr=['white','violet','green','yellow','brown','red','blue']
+        content[0].style.backgroundColor=arr[count]
+        bttn[0].style.backgroundColor=arr[count]
+        text[0].style.backgroundColor=arr[count]
+        color[0].style.backgroundColor=arr[count]
+        color[0].innerText=arr[count]
+        count=count+1
+        if(count>6)
+            count=0
+    }
+   
+</script>
+<body>
+    <div class="container">
+        <div class="letter">
+            <h1>Background Color:<span>Red</span></h1>
+            <button onclick="update()">click here...</button>
+        </div>
+    </div>
+</body>
+</html>
