@@ -12,7 +12,7 @@
     var color=document.getElementsByTagName("span")
     var text=document.getElementsByTagName("h1")
     var bttn=document.getElementsByTagName("button")
-    function update(){
+    function change(){
         let arr=['white','violet','green','yellow','brown','red','blue']
         content[0].style.backgroundColor=arr[count]
         bttn[0].style.backgroundColor=arr[count]
@@ -29,7 +29,7 @@
     <div class="container">
         <div class="letter">
             <h1>Background Color:<span>Red</span></h1>
-            <button onclick="update()">click here...</button>
+            <button onclick="change()">click here...</button>
         </div>
     </div>
 </body>
